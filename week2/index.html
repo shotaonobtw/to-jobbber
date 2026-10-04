@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>森の音カフェ｜メニュー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#f7f5ef] text-stone-800 antialiased">
+    <header class="border-b border-stone-200 bg-[#f7f5ef]">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
+        aria-label="メインナビゲーション"
+      >
+        <a href="#" class="text-xl font-bold tracking-wide text-emerald-950">
+          森の音 <span class="text-sm font-medium text-stone-500">cafe</span>
+        </a>
+
+        <div class="flex gap-5 text-sm font-medium text-stone-600">
+          <a href="#drinks" class="transition-colors hover:text-emerald-800">ドリンク</a>
+          <a href="#food" class="transition-colors hover:text-emerald-800">フード</a>
+          <a href="#sweets" class="transition-colors hover:text-emerald-800">スイーツ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 pb-12 pt-16 text-center sm:pb-16 sm:pt-24">
+        <p class="mb-4 text-sm font-semibold tracking-[0.25em] text-emerald-800">
+          A QUIET MOMENT IN THE CITY
+        </p>
+        <h1 class="text-4xl font-bold leading-tight tracking-wide text-emerald-950 sm:text-6xl">
+          森の音カフェ
+        </h1>
+        <p class="mx-auto mt-6 max-w-xl text-base leading-8 text-stone-600 sm:text-lg">
+          木漏れ日のようなコーヒーと、ほっとするひと皿。<br class="hidden sm:block" />
+          お仕事の合間にも、自分らしい休憩時間をどうぞ。
+        </p>
+        <a
+          href="#drinks"
+          class="mt-8 inline-flex rounded-full bg-emerald-900 px-7 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 hover:shadow-lg"
+        >
+          メニューを見る
+        </a>
+      </section>
+
+      <div class="mx-auto max-w-6xl space-y-16 px-6 pb-20">
+        <section id="drinks" aria-labelledby="drinks-title">
+          <div class="mb-6">
+            <p class="text-xs font-semibold tracking-[0.2em] text-emerald-700">DRINKS</p>
+            <h2 id="drinks-title" class="mt-1 text-2xl font-bold text-emerald-950">ドリンク</h2>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-amber-50 text-6xl" aria-hidden="true">☕</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">森のブレンド</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">深煎りの香りと、まろやかな後味。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥520</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-orange-50 text-6xl" aria-hidden="true">🍊</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">自家製ハニーレモネード</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">はちみつの甘さとレモンの爽やかさ。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥580</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-green-50 text-6xl" aria-hidden="true">🍵</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">宇治抹茶ラテ</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">抹茶のほろ苦さをミルクでやさしく。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥620</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="food" aria-labelledby="food-title">
+          <div class="mb-6">
+            <p class="text-xs font-semibold tracking-[0.2em] text-emerald-700">FOOD</p>
+            <h2 id="food-title" class="mt-1 text-2xl font-bold text-emerald-950">フード</h2>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-yellow-50 text-6xl" aria-hidden="true">🥪</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">たまごと野菜のサンド</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">近郊野菜を使った、軽やかなランチ。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥780</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-orange-50 text-6xl" aria-hidden="true">🍛</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">季節野菜のカレー</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">スパイス香る、野菜たっぷりの一皿。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥980</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-rose-50 text-6xl" aria-hidden="true">🥗</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">豆とハーブのサラダ</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">豆の食感とハーブの香りを楽しめます。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥720</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="sweets" aria-labelledby="sweets-title">
+          <div class="mb-6">
+            <p class="text-xs font-semibold tracking-[0.2em] text-emerald-700">SWEETS</p>
+            <h2 id="sweets-title" class="mt-1 text-2xl font-bold text-emerald-950">スイーツ</h2>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-pink-50 text-6xl" aria-hidden="true">🍰</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">季節のチーズケーキ</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">果物を添えた、なめらかな自家製ケーキ。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥650</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-amber-50 text-6xl" aria-hidden="true">🍮</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">昔ながらのプリン</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">ほろ苦いカラメルが自慢の固めプリン。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥560</p>
+              </div>
+            </article>
+
+            <article class="rounded-2xl bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+              <div class="mb-5 flex h-32 items-center justify-center rounded-xl bg-red-50 text-6xl" aria-hidden="true">🍓</div>
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-stone-800">いちごのタルト</h3>
+                  <p class="mt-2 text-sm leading-6 text-stone-500">香ばしいタルトに、旬のいちごをたっぷり。</p>
+                </div>
+                <p class="shrink-0 font-bold text-emerald-900">¥680</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-emerald-950 px-6 py-8 text-center text-sm text-emerald-100">
+      <p class="font-semibold">森の音 cafe</p>
+      <p class="mt-2 text-emerald-200">ゆっくり深呼吸できる場所。</p>
+    </footer>
+  </body>
+</html>
