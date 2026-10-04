@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好きなNBA選手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (min-width: 481px) {
+      #player-cards {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <main class="mx-auto max-w-5xl px-4 py-10">
+    <h1 class="mb-8 text-center text-3xl font-bold">好きなNBA選手</h1>
+
+    <div id="player-cards" class="flex flex-col gap-6">
+      <section class="flex-1 rounded-xl bg-white p-6 shadow">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-5xl" role="img" aria-label="王冠">👑</span>
+          <span class="text-sm font-semibold text-gray-500">NBA PLAYER</span>
+        </div>
+        <h2 class="mb-2 text-xl font-bold">レブロン・ジェームズ</h2>
+        <p>長いキャリアを通じて活躍し続ける選手です。得点だけでなく、味方を生かすプレーにも注目しています。</p>
+      </section>
+
+      <section class="flex-1 rounded-xl bg-white p-6 shadow">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-5xl" role="img" aria-label="雷">⚡</span>
+          <span class="text-sm font-semibold text-gray-500">NBA PLAYER</span>
+        </div>
+        <h2 class="mb-2 text-xl font-bold">シェイ・ギルジャス＝アレクサンダー</h2>
+        <p>スピードや緩急を生かしたドライブが魅力の選手です。得点を決める力の高さに惹かれています。</p>
+      </section>
+
+      <section class="flex-1 rounded-xl bg-white p-6 shadow">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-5xl" role="img" aria-label="馬">🐴</span>
+          <span class="text-sm font-semibold text-gray-500">NBA PLAYER</span>
+        </div>
+        <h2 class="mb-2 text-xl font-bold">ニコラ・ヨキッチ</h2>
+        <p>大きな体を生かしたプレーに加えて、パスの上手さも魅力です。得点とアシストの両方で試合を動かします。</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
