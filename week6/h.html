@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="bmi-form">
+  <input id="height">
+  <input id="weight">
+  <button type="submit">計算する</button>
+</form>
+
+<script>
+    const form = document.querySelector("#bmi-form");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const height = Number(document.querySelector("#height").value);
+  const weight = Number(document.querySelector("#weight").value);
+
+  // BMI計算...
+});
+</script>
+
+  ///scriptがなかったら、ページは更新されてしまうが、
+  form.addEventListenerこいつがあると、更新が止まる
+  止めて、次の処理ができる
+
+  通常のフォーム送信は「ページ遷移」や「リロード」につながる
+BMI計算はブラウザ内だけで完結したい
+なので送信を止めて、計算処理を自分でやる
+
+</body>
+</html>
