@@ -1,99 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>シンプルTODOリスト</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=../week07/">
+    <title>Page moved</title>
+    <script>
+        const target = new URL(window.location.href);
+        target.pathname = target.pathname.replace(/\/week7(?=\/|$)/, "/week07");
+        window.location.replace(target.href);
+    </script>
 </head>
-<body class="min-h-screen bg-slate-100 px-4 py-8 text-slate-800">
-  <main class="mx-auto max-w-xl rounded-2xl bg-white p-5 shadow-md sm:p-8">
-    <h1 class="mb-2 text-2xl font-bold">TODOリスト</h1>
-    <p class="mb-6 text-sm text-slate-600">
-      やることを入力して、リストに追加しましょう。
-    </p>
-
-    <form id="todo-form" class="flex flex-col gap-3 sm:flex-row">
-      <label for="todo-input" class="sr-only">新しいタスク</label>
-      <input
-        id="todo-input"
-        type="text"
-        placeholder="例：課題に取り組む"
-        class="min-w-0 flex-1 rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-      >
-      <button
-        type="submit"
-        class="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
-      >
-        追加
-      </button>
-    </form>
-
-    <ul class="todo-list mt-6 space-y-3" aria-live="polite"></ul>
-  </main>
-
-  <script>
-    const form = document.querySelector("#todo-form");
-    const input = document.querySelector("#todo-input");
-    const todoList = document.querySelector(".todo-list");
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const taskText = input.value.trim();
-
-      if (taskText === "") {
-        return;
-      }
-
-      const listItem = document.createElement("li");
-      listItem.className =
-        "flex min-w-0 flex-col gap-3 rounded-lg border border-slate-200 p-4 sm:flex-row sm:items-center sm:justify-between";
-
-      const taskLabel = document.createElement("span");
-      taskLabel.className = "min-w-0 break-words";
-      taskLabel.textContent = taskText;
-
-      const buttonGroup = document.createElement("div");
-      buttonGroup.className = "flex shrink-0 gap-2";
-
-      const completeButton = document.createElement("button");
-      completeButton.type = "button";
-      completeButton.className =
-        "rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white hover:bg-green-700";
-      completeButton.textContent = "完了";
-      completeButton.setAttribute("aria-pressed", "false");
-
-      completeButton.addEventListener("click", () => {
-        const isCompleted = taskLabel.classList.toggle("line-through");
-        taskLabel.classList.toggle("text-slate-400", isCompleted);
-        completeButton.setAttribute("aria-pressed", String(isCompleted));
-        completeButton.textContent = isCompleted ? "未完了に戻す" : "完了";
-      });
-
-      const deleteButton = document.createElement("button");
-      deleteButton.type = "button";
-      deleteButton.className =
-        "rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white hover:bg-red-700";
-      deleteButton.textContent = "削除";
-
-      deleteButton.addEventListener("click", () => {
-        const shouldDelete = window.confirm(`「${taskText}」を削除しますか？`);
-
-        if (shouldDelete) {
-          listItem.remove();
-        }
-      });
-
-      buttonGroup.appendChild(completeButton);
-      buttonGroup.appendChild(deleteButton);
-      listItem.appendChild(taskLabel);
-      listItem.appendChild(buttonGroup);
-      todoList.appendChild(listItem);
-
-      input.value = "";
-      input.focus();
-    });
-  </script>
+<body>
+    <p>This page moved to <a href="../week07/">week07</a>.</p>
 </body>
 </html>
