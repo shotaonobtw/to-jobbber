@@ -1,37 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=../week06/h.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 06のページへ移動</title>
 </head>
 <body>
-    <form id="bmi-form">
-  <input id="height">
-  <input id="weight">
-  <button type="submit">計算する</button>
-</form>
-
-<script>
-    const form = document.querySelector("#bmi-form");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const height = Number(document.querySelector("#height").value);
-  const weight = Number(document.querySelector("#weight").value);
-
-  // BMI計算...
-});
-</script>
-
-  ///scriptがなかったら、ページは更新されてしまうが、
-  form.addEventListenerこいつがあると、更新が止まる
-  止めて、次の処理ができる
-
-  通常のフォーム送信は「ページ遷移」や「リロード」につながる
-BMI計算はブラウザ内だけで完結したい
-なので送信を止めて、計算処理を自分でやる
-
+  <p>Week 06のページは移動しました。<a href="../week06/h.html">新しいページを開く</a></p>
 </body>
 </html>
